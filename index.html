@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content>
+    <title>CV Katsiaryna Tsyhankova</title>
+    <link rel="icon" href="images/ava_small.png" type="image/png">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/rainbow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+</head>
+
+<body>
+    <div class="block">
+        <header>
+            <div class="header-container">
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"><a href="#Skills" class="header-nav-link">Skills</a></li>
+                        <li class="header-nav-item"><a href="#WorkExperience" class="header-nav-link">Work
+                                experience</a></li>
+                        <li class="header-nav-item"><a href="#Education" class="header-nav-link">Education</a></li>
+                        <li class="header-nav-item"><a href="#Languages" class="header-nav-link">Languages</a></li>
+                        <li class="header-nav-item"><a href="#Code" class="header-nav-link">Code</a></li>
+                        <li class="header-nav-item"><a href="#Projects" class="header-nav-link">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="left-side">
+                <div>
+                    <img class="photo" src="images/MyPhoto.png" alt="Photo of Katiaryna" width="150" height="150">
+                </div>
+                <div class="capture">
+                    <h1>Katsiaryna Tsyhankova</h1>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><span>location:</span> Grodno, Belarus</li>
+                        <li><span>e-mail:</span> katia.tsygankova@gmail.com</li>
+                        <li><span>discord:</span> Katiaryna#5426</li>
+                        <li><span>skype:</span> katia.tsygankova</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Self motivation, fast learning, communicative, responsible</p>
+                </div>
+            </div>
+
+            <div class="right-side">
+
+                <div id="Skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>1C 8, Object-oriented programming</li>
+                        <li>Software development, ERP</li>
+                        <li>HTML/CSS basic</li>
+                        <li>Javascript basic</li>
+                    </ul>
+                </div>
+                <div id="WorkExperience">
+                    <h2>Work experience</h2>
+                    <section>
+                        <h3>March 2007 – currently. 1C programmer</h3>
+                    </section>
+                </div>
+                <div id="Education">
+                    <h2>Education</h2>
+                    <section id="section-education">
+                        <h3>2021 RSSchool</h3>
+                        <p><a href="https://app.rs.school/certificate/fnx7ilcg">JS/FE Pre-School</a></p>
+
+
+                        <h3>2007-2009 "Institute for Advanced Studies and Retraining in the Field of Informatization and Management Technologies" of the Belarusian State University</h3>
+
+                        <ul>
+                            <li><span>Speciality:</span> Accounting and Control in Industry</li>
+                            <li><span>The assigned qualification:</span> Accountant and economist</li>
+                        </ul>
+
+                        <h3>2002 – 2007 Yanka Kupala State University of Grodno</h3>
+                        <p>Faculty of Mathematics and Informatics</p>
+                        <ul>
+                            <li><span>Speciality:</span> Applied Mathematics (scientific production activity)</li>
+                            <li><span>The assigned qualification:</span> Mathematician- Programmer</li>
+                        </ul>
+
+                    </section>
+                </div>
+                <div id="Languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Russian / Belarusian: native speaker</li>
+                        <li>English: B1</li>
+                        <li>Polish: B2</li>
+                    </ul>
+                </div>
+                <div id="Code">
+                    <h2>Code</h2>
+                    <pre>
+                    <code class="javascript">
+    module.exports = function check(str, bracketsConfig) {
+        let stack = [];
+        let openBrackets = [];
+        let pairsOfBrackets = new Object();
+        for (let i = 0; i &lt; bracketsConfig.length; i++) {
+            pairsOfBrackets[bracketsConfig[i][1]] = bracketsConfig[i][0];
+            openBrackets.push(bracketsConfig[i][0]);
+        }
+        for (let i = 0; i &lt; str.length; i++) {
+            if (openBrackets.includes(str[i])) {
+                if (pairsOfBrackets[str[i]] === str[i]) {
+                    if (stack.length !== 0 && stack[stack.length - 1] === str[i]) { stack.pop() }
+                    else { stack.push(str[i]) }
+                }
+                else { stack.push(str[i]) }
+            }
+            else {
+                if (stack.length === 0) { return false }
+                if (pairsOfBrackets[str[i]] === stack[stack.length - 1]) { stack.pop() }
+                else { return false }
+            }
+        }
+        return stack.length === 0;
+    }                                           
+                    </code>
+                </pre>
+                </div>
+                <div id="Projects" class="projects">
+                    <h2>Projects</h2>
+                    <h3>Clock</h3>
+                    <div class="project">
+                        <div class="project-pic">
+                            <a href="https://rolling-scopes-school.github.io/katiarynka-JSFEPRESCHOOL/js-clock/" target="_blank">
+                                <img src="images/pr_clock.png" alt="JS Clock" width="150" height="150">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <p>Clock - mechanical clock with moving hands in JavaScript.</p>
+                            <p>Use: HTML, CSS, JavaScript, DOM</p>
+                        </div>
+                    </div>
+                    <h3>Whack-a-Mole!</h3>
+                    <div class="project">
+                        <div class="project-pic">
+                            <a href="https://rolling-scopes-school.github.io/katiarynka-JSFEPRESCHOOL/whack-a-mole/" target="_blank">
+                                <img src="images/pr_whack_a_mole.png" alt="JS Whack-A_MOLE" width="150" height="150">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <p>Whack-A-Mole is a reaction speed game in which you have to click on targets and earn points.
+                            </p>
+                            <p>Use: HTML, CSS, JavaScript, DOM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <a href="https://github.com/Katiarynka"><img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub icon"></a>
+            <p>2022</p>
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS logo" width="100"></a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
