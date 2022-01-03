@@ -1,6 +1,6 @@
 ### Katsiaryna Tsyhankova ###
 * *e-mail:* katia.tsygankova@gmail.com
-* *tel:* +375297820441
+* *tel:* +375297800000
 * Software development,  ERP
 * Self motivation, fast learning, communicative , responsible
 

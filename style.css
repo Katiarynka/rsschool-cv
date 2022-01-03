@@ -6,8 +6,10 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: #3b3d36;
 }
- .block {
+
+.block {
     width: 70%;
     min-width: 320px;
     max-width: 1200px;
@@ -15,8 +17,8 @@ main {
     font-size: 17px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #303030;
-    background-color: #f0f0f0;
-} 
+    background-color: #ffffff;
+}
 
 .header-nav {
     position: relative;
@@ -26,7 +28,7 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #cfe0b9;
+    background-color: #ff9c01;
 }
 
 .header-nav-list li {
@@ -38,15 +40,17 @@ main {
     color: #303030;
     font-size: 17px;
     font-weight: bold;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 
 .left-side {
     box-sizing: border-box;
     width: 40%;
-    padding: 20px 20px; 
+    padding: 20px 20px;
     margin: 0px;
     text-align: center;
-    background-color:#DCDCDC; 
+    background-color: #29292b;
+    color: #fff9f8;
 }
 
 .right-side {
@@ -66,7 +70,7 @@ main {
 
 h2 {
     font-weight: bold;
-    background-color: #cfe0b9;
+    background-color: #ff9c01;
     text-transform: uppercase;
     text-align: center;
     margin: 0px;
@@ -107,7 +111,8 @@ span {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 100%;    
+    width: 100%;
     padding: 20px 50px 10px 50px;
     align-items: center;
+    background-color: #ff9c01;
 }
