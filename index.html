@@ -72,7 +72,7 @@
                 <div id="WorkExperience">
                     <h2>Work experience</h2>
                     <section>
-                        <h3>March 2007 – currently. 1C programmer</h3>
+                        <h3>March 2007 - currently. 1C programmer</h3>
                     </section>
                 </div>
                 <div id="Education">
@@ -121,7 +121,7 @@
         for (let i = 0; i &lt; str.length; i++) {
             if (openBrackets.includes(str[i])) {
                 if (pairsOfBrackets[str[i]] === str[i]) {
-                    if (stack.length !== 0 && stack[stack.length - 1] === str[i]) { stack.pop() }
+                    if (stack.length !== 0 &amp;&amp; stack[stack.length - 1] === str[i]) { stack.pop() }
                     else { stack.push(str[i]) }
                 }
                 else { stack.push(str[i]) }
@@ -133,7 +133,7 @@
             }
         }
         return stack.length === 0;
-    }                                           
+    }
                     </code>
                 </pre>
                 </div>
